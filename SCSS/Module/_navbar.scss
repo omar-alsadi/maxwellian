@@ -25,7 +25,7 @@
             right: 2.5rem;
         }
 
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 600px), screen and (max-height: 375px) {
             width: 4.5rem;
             height: 4.5rem;
         }
@@ -48,7 +48,7 @@
             right: 2rem;
         }
 
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 600px), screen and (max-height: 375px) {
             width: 4rem;
             height: 4rem;
             top: 3rem;
@@ -81,6 +81,11 @@
     &_item {
         margin: 1rem;
         padding: 1rem;
+
+        @media screen and (max-height: 600px) {
+            margin: 0;
+            padding: 0;
+        }
     }
 
     &_link {
@@ -118,7 +123,7 @@
 
     &_icon {
         position: relative;
-        top: 50%;
+        top: 45%;
         left: 50%;
         transform: translate(-50%, -50%);
 
@@ -134,7 +139,7 @@
                 width: 2rem;
             }
 
-            @media screen and (max-width: 600px) {
+            @media screen and (max-width: 600px), screen and (max-height: 375px) {
                 height: 1px;
             }
         }

@@ -53,6 +53,26 @@ header {
   left: 4.5rem;
   z-index: 100; }
 
+.covid {
+  background-image: url("https://static.wixstatic.com/media/11062b_8deb790af4fc4a8684a730e0d287669d~mv2.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh; }
+  .covid-wrapper {
+    height: 100vh;
+    background-color: rgba(179, 14, 64, 0.54);
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    text-align: center; }
+  .covid p {
+    max-width: 95%;
+    font-size: 26px;
+    margin: 0 auto;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-shadow: 3px 2px black; }
+
 .homeSlide {
   height: 130vh; }
 
@@ -153,13 +173,13 @@ header {
   background-image: url(./../../assest/1.png); }
 
 @media screen and (max-width: 1200) {
-  .hsContent p {
+  .hsContent p, .covid-wrapper p {
     font-size: 24px; }
   .hsContent h2, .copy h2 {
     font-size: 48px; } }
 
 @media screen and (max-width: 1000px), screen and (max-height: 750px) {
-  .hsContent p {
+  .hsContent p, .covid-wrapper p {
     font-size: 20px;
     text-shadow: 2px 1px black; }
   .hsContent h2, .copy h2 {
@@ -171,7 +191,7 @@ header {
     max-width: 150px; }
   .homeSlide {
     height: 100vh; }
-  .hsContent p {
+  .hsContent p, .covid-wrapper p {
     font-size: 14px;
     text-shadow: 2px 1px black; }
   .hsContent h2, .copy h2 {
@@ -184,7 +204,7 @@ header {
 @media screen and (max-width: 375px) {
   .mw-logo {
     max-width: 120px; }
-  .hsContent p {
+  .hsContent p, .covid-wrapper p {
     font-size: 12px;
     text-shadow: 2px 1px black; }
   .hsContent h2, .copy h2 {
@@ -197,7 +217,7 @@ header {
 @media screen and (max-width: 350px) {
   .mw-logo {
     max-width: 100px; }
-  .hsContent p {
+  .hsContent p, .covid-wrapper p {
     font-size: 10px; }
   .M-lists li {
     font-size: 11px; }
@@ -207,7 +227,7 @@ header {
 @media screen and (max-height: 375px) {
   .mw-logo {
     max-width: 120px; }
-  .hsContent p {
+  .hsContent p, .covid-wrapper p {
     font-size: 10px;
     text-shadow: 2px 1px black; }
   .hsContent h2, .copy h2 {
@@ -287,6 +307,26 @@ span {
       transform: translateY(-50%) translateX(-50%);
       opacity: 1; }
 
+.btn-inline {
+  border: none;
+  outline: none;
+  font-size: 1.6rem;
+  color: white;
+  cursor: pointer;
+  margin-top: 30px;
+  padding: 1rem 2rem;
+  border: 1px solid white;
+  background-color: transparent;
+  transition: all .2s;
+  text-transform: uppercase;
+  transition: all .4s; }
+  .btn-inline:hover {
+    background-color: white;
+    color: black; }
+  .btn-inline:focus {
+    outline: none;
+    animation: pulsate 1s infinite; }
+
 .navigation {
   position: relative; }
   .navigation_checkbox {
@@ -309,7 +349,7 @@ span {
       .navigation_button {
         top: 3.5rem;
         right: 2.5rem; } }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 600px), screen and (max-height: 375px) {
       .navigation_button {
         width: 4.5rem;
         height: 4.5rem; } }
@@ -328,7 +368,7 @@ span {
       .navigation_background {
         top: 3rem;
         right: 2rem; } }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 600px), screen and (max-height: 375px) {
       .navigation_background {
         width: 4rem;
         height: 4rem;
@@ -355,6 +395,10 @@ span {
   .navigation_item {
     margin: 1rem;
     padding: 1rem; }
+    @media screen and (max-height: 600px) {
+      .navigation_item {
+        margin: 0;
+        padding: 0; } }
   .navigation_link {
     font-size: 3rem;
     font-weight: 300;
@@ -381,7 +425,7 @@ span {
     width: 100%; }
   .navigation_icon {
     position: relative;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%); }
     .navigation_icon, .navigation_icon::after, .navigation_icon::before {
@@ -392,7 +436,7 @@ span {
       @media screen and (max-width: 900px) {
         .navigation_icon, .navigation_icon::after, .navigation_icon::before {
           width: 2rem; } }
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 600px), screen and (max-height: 375px) {
         .navigation_icon, .navigation_icon::after, .navigation_icon::before {
           height: 1px; } }
     .navigation_icon::after, .navigation_icon::before {

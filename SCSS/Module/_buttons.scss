@@ -76,3 +76,28 @@ span {
         }
     }
 }
+
+.btn-inline {
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    color: white;
+    cursor: pointer;
+    margin-top: 30px;
+    padding: 1rem 2rem;
+    border: 1px solid white;
+    background-color: transparent;
+    transition: all .2s;
+    text-transform: uppercase;
+    transition: all .4s;
+
+    &:hover {
+        background-color: white;
+        color: black;
+    }
+
+    &:focus {
+        outline: none;
+        animation: pulsate 1s infinite;
+    }
+}

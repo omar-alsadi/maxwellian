@@ -1,5 +1,5 @@
 @media screen and (max-width: 1200) {
-    .hsContent p {
+    .hsContent p, .covid-wrapper p {
         font-size: 24px;
     }
 
@@ -9,7 +9,7 @@
 }
 
 @media screen and (max-width: 1000px), screen and (max-height: 750px) {
-    .hsContent p {
+    .hsContent p, .covid-wrapper p {
         font-size: 20px;
         text-shadow: 2px 1px black;
     }
@@ -29,7 +29,7 @@
         height: 100vh;
     }
 
-    .hsContent p {
+    .hsContent p, .covid-wrapper p {
         font-size: 14px;
         text-shadow: 2px 1px black;
     }
@@ -50,7 +50,7 @@
         max-width: 120px;
     }
 
-    .hsContent p {
+    .hsContent p, .covid-wrapper p {
         font-size: 12px;
         text-shadow: 2px 1px black;
     }
@@ -71,7 +71,7 @@
         max-width: 100px;
     }
 
-    .hsContent p {
+    .hsContent p, .covid-wrapper p {
         font-size: 10px;
     }
 
@@ -89,7 +89,7 @@
         max-width: 120px;
     }
 
-    .hsContent p {
+    .hsContent p, .covid-wrapper p {
         font-size: 10px;
         text-shadow: 2px 1px black;
     }
