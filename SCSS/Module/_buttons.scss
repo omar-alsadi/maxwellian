@@ -1,3 +1,100 @@
+.btn {
+    &:visited {
+        font-size: 2rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        display: inline-block;
+        padding: 1.5rem 4rem;
+        border-radius: 10rem;
+        position: relative;
+        transition: all .2s;
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+
+        &::after {
+            transform: scaleX(1.2) scaleY(1.4);
+            opacity: 0;
+        }
+    }
+
+    &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    }
+
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+
+    &-green {
+        color: white;
+        background-color: $color-primary;
+
+        &::after {
+            color: white;
+            background-color: $color-primary;
+        }
+    }
+
+    &-submit {
+        margin-top: 3rem;
+        cursor: pointer;
+        outline: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border: none;
+        padding: 1.5rem 2.5rem;
+        border-radius: 100px;
+
+        @media screen and (max-width: 680px) {
+            margin-top: 0;
+            margin: 1rem 0;
+        }
+    }
+}
+
+.btn-inline {
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    color: white;
+    cursor: pointer;
+    margin-top: 30px;
+    padding: 1rem 2rem;
+    border: 1px solid white;
+    background-color: transparent;
+    transition: all .2s;
+    text-transform: uppercase;
+    transition: all .4s;
+
+    @media screen and (max-width: 375px), screen and (max-height: 375px) {
+        font-size: 1rem;
+    }
+
+    &:hover {
+        background-color: white;
+        color: black;
+    }
+
+    &:focus {
+        outline: none;
+        animation: pulsate 1s infinite;
+    }
+}
+
 span {
     @include font-size(1, 2);
 
@@ -74,30 +171,5 @@ span {
                 opacity: 1;
             }
         }
-    }
-}
-
-.btn-inline {
-    border: none;
-    outline: none;
-    font-size: 1.6rem;
-    color: white;
-    cursor: pointer;
-    margin-top: 30px;
-    padding: 1rem 2rem;
-    border: 1px solid white;
-    background-color: transparent;
-    transition: all .2s;
-    text-transform: uppercase;
-    transition: all .4s;
-
-    &:hover {
-        background-color: white;
-        color: black;
-    }
-
-    &:focus {
-        outline: none;
-        animation: pulsate 1s infinite;
     }
 }

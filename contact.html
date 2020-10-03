@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assest/w-logo.png" rel="icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>MaxWellian | Contact</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <a href="./index.html"><img class="mw-logo" src="assest/m-logo.png" alt="maxwellian" /></a>
+
+        <div class="navigation">
+            <input id="nav-toggle" class="navigation_checkbox" type="checkbox">
+            <label for="nav-toggle" class="navigation_button">
+                <span class="navigation_icon">&nbsp;</span>
+            </label>
+            <div class="navigation_background">&nbsp;</div>
+
+            <nav class="navigation_nav">
+                <ul class="navigation_list">
+                    <li class="navigation_item"><a href="./index.html" class="navigation_link">Home</a></li>
+                    <li class="navigation_item"><a href="#" class="navigation_link">En / Fr</a></li>
+                    <li class="navigation_item"><a href="./covid.html" class="navigation_link">COVID-19</a></li>
+                    <li class="navigation_item"><a href="./contact.html" class="navigation_link">Contact Us</a></li>
+                    <li class="navigation_item"><a href="./about.html" class="navigation_link">About Maxwellian</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <section class="contact">
+        <div class="contact-wrapper">
+
+            <div class="map-wrapper">
+                <div class="google-maps">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3793.6099150220316!2d-73.57193540897349!3d45.501996644323356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91b215151038f%3A0x6b1d799fe6f64b9f!2sMaxwellian%20Inc.%20(HQ)!5e0!3m2!1sen!2sca!4v1601737424830!5m2!1sen!2sca"
+                        width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="brunch">
+                    <div class="ca">
+                        <img src="./assest/ca.png" alt="canada">
+                        <div>
+                            3PVM, #400, Montreal, Quebec, H3B 2E3
+                        </div>
+                    </div>
+
+                    <div class="us">
+                        <img src="./assest/us.png" alt="US">
+                        <ul>
+                            <li>444 Somerville Ave, Somerville, MA 02143</li>
+                            <li>25 Broadway 9th Floor, New York, NY 10004</li>
+
+                            <li>Tel: +1 438 488 8689</li>
+                            <li>
+                                +1 438 936 9804
+                            </li>
+                        </ul>
+                    </div>​
+                </div>
+
+                <div class="social">
+                    <a href="https://twitter.com/Maxwellian_inc" class="social-link">
+                        <img src="./assest/twitter.png" alt="twitter">
+                    </a>
+                    <a href="https://www.linkedin.com/company/maxwellianinc/?viewAsMember=true" class="social-link">
+                        <img src="./assest/linkedin.png" alt="linkedin">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="form-wrapper">
+
+                <form action="#" class="form">
+                    <div class="contact-primary">
+                        <h2 class="contact-primary-title">Get in touch for more info</h2>
+                    </div>
+
+                    <div class="form-group">
+                        <input class="form_input" type="name" placeholder="First Name" required>
+                        <!-- </div>
+                                
+                                <div class="form-group"> -->
+                        <input class="form_input" type="name" placeholder="Last Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input class="form_input" type="email" placeholder="E-mail Address" required>
+                        <!-- </div>
+                                        
+                                        <div class="form-group"> -->
+                        <input class="form_input" type="number" pattern="/^-?\d+\.?\d*$/"
+                            onKeyPress="if(this.value.length==10) return false;" placeholder="Phone Number" required>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea class="form_input" rows="4" cols="50" name="comment" placeholder="message"
+                            required></textarea>
+                    </div>
+
+                    <button class="btn btn-green btn-submit">Submit</button>
+
+                </form>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <script type="text/javascript"
+        src="//maps.googleapis.com/maps/api/js?callback=initMap&amp;client=gme-wixcomltd2&amp;libraries=places&amp;language=en"></script>
+</body>
+
+</html>

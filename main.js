@@ -1,4 +1,3 @@
-console.log("works");
 
 function scrollerInit() {
     $('#skrollr-body').ready(function () {

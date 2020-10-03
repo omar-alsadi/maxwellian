@@ -22,3 +22,167 @@
         text-shadow: 3px 2px black;
     }
 }
+
+.contact {
+    background-image: url("../../assest/contact.png");
+    background-position: center;
+    background-size: cover;
+    height: 130vh;
+
+    @media screen and (max-width: 1200px) {
+        height: auto;
+    }
+
+    &-primary {
+        margin-bottom: 3rem;
+
+        &-title {
+            background-image: linear-gradient(to right, $gr-light, $gr-dark);
+            -webkit-background-clip: text;
+            color: transparent;
+            letter-spacing: 0.2rem;
+
+            @media screen and (max-width: 680px) {
+                font-size: 18px;
+            }
+
+            @media screen and (max-width: 500px) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    &-wrapper {
+        height: 130vh;
+        background-color: rgba(255, 255, 255, 0.5);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-transform: uppercase;
+        text-align: center;
+
+        @media screen and (max-width: 1200px) {
+            height: auto;
+            flex-direction: column;
+        }
+    }
+}
+
+.google-maps {
+    position: relative;
+    padding-bottom: 75%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+}
+
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 10px;
+    box-shadow: 0 1.5rem 3rem $black-blur;
+}
+
+.map-wrapper {
+    max-width: 600px;
+    padding: 5rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 1rem;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    margin: 0 auto;
+    position: relative;
+    top: 3rem;
+
+    @media screen and (max-width: 1200px) {
+        width: 600px;
+        margin: 10rem auto;
+        order: 2;
+        top: 0;
+    }
+
+    @media screen and (max-width: 680px) {
+        width: 450px;
+        padding: 2rem;
+    }
+
+    @media screen and (max-width: 500px) {
+        width: 400px;
+        padding: 2rem 1rem;
+    }
+
+    @media screen and (max-width: 440px) {
+        width: 350px;
+        margin: 7rem auto;
+    }
+
+    @media screen and (max-width: 375px) {
+        width: 300px;
+    }
+}
+
+.us ul {
+    list-style-type: none;
+}
+
+.us, .ca {
+    margin-top: 2rem;
+}
+
+.social-link {
+    text-decoration: none;
+
+    img {
+        width: 4rem;
+        height: 4rem;
+        margin: 1rem;
+    }
+}
+
+.brunch {
+    @media screen and (max-width: 440px) {
+        font-size: 12px;
+    }
+}
+
+.about {
+    @extend .covid;
+
+    background-image: url("./../../assest/industry.jpg");
+
+    @media screen and (max-height: 420px) {
+        height: 120vh;
+    }
+
+    &-wrapper {
+        @extend .covid-wrapper;
+
+        padding: 5rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.7);
+
+        @media screen and (max-width: 420px) {
+            padding: 2rem;
+        }
+
+        @media screen and (max-height: 420px) {
+            height: 120vh;
+            justify-content: flex-end;
+        }
+    }
+
+    &-wrapper p {
+        margin-bottom: 3rem;
+
+        @media screen and (max-width: 420px) {
+            margin-bottom: 1rem;
+        }
+
+        @media screen and (max-height: 375px) {
+            margin-bottom: 1rem;
+        }
+    }
+}
