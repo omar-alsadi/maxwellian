@@ -1,0 +1,428 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Lato" , sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7; }
+
+body, html {
+  height: 100%;
+  min-height: 100%;
+  margin: 0; }
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.mw-logo {
+  max-width: 250px;
+  position: absolute;
+  top: 5.5rem;
+  left: 4.5rem;
+  z-index: 100; }
+
+.homeSlide {
+  height: 130vh; }
+
+.bcg {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%; }
+
+.hsContainer {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative; }
+
+.hsContent {
+  max-width: 600px;
+  margin: -150px auto 0 auto;
+  display: table-cell;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #ebebeb;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0 8%;
+  text-align: center; }
+
+.hsContent h2,
+.copy h2 {
+  color: #ffffff;
+  font-size: 60px;
+  line-height: 48px;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  text-shadow: 3px 2px black; }
+
+.hsContent p {
+  max-width: 95%;
+  font-size: 26px;
+  margin: 0 auto;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-shadow: 3px 2px black; }
+
+.menu {
+  position: fixed;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  right: 1em;
+  top: 50%;
+  z-index: 99;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+#menu-center ul {
+  padding: 0; }
+  #menu-center ul li {
+    list-style: none;
+    margin: 10px 0; }
+    #menu-center ul li a {
+      text-indent: -9999px;
+      display: block;
+      border-radius: 50%;
+      height: 8px;
+      width: 8px;
+      background: #fff; }
+      #menu-center ul li a.active {
+        background: none;
+        border: 1px solid #fff; }
+
+.slide-1 {
+  background-image: url(./../../assest/Wind_Turbines-ge.gif); }
+
+.slide-2 {
+  background-image: url(./../../assest/green-energy.jpg); }
+
+.slide-3 {
+  background-image: url(./../../assest/optic.gif); }
+
+.slide-4 {
+  background-image: url(./../../assest/p.gif); }
+
+.slide-5 {
+  background-image: url(./../../assest/m.png);
+  background-size: contain; }
+
+.slide-6 {
+  background-image: url(./../../assest/windtech.jpg); }
+
+.slide-7 {
+  background-image: url(./../../assest/1.png); }
+
+@media screen and (max-width: 1200) {
+  .hsContent p {
+    font-size: 24px; }
+  .hsContent h2, .copy h2 {
+    font-size: 48px; } }
+
+@media screen and (max-width: 1000px), screen and (max-height: 750px) {
+  .hsContent p {
+    font-size: 20px;
+    text-shadow: 2px 1px black; }
+  .hsContent h2, .copy h2 {
+    font-size: 48px;
+    text-shadow: 1px 1px black; } }
+
+@media screen and (max-width: 680px), screen and (max-height: 600px) {
+  .mw-logo {
+    max-width: 150px; }
+  .homeSlide {
+    height: 100vh; }
+  .hsContent p {
+    font-size: 14px;
+    text-shadow: 2px 1px black; }
+  .hsContent h2, .copy h2 {
+    font-size: 22px;
+    text-shadow: 1px 1px black; }
+  .M-lists li {
+    font-size: 14px;
+    text-shadow: 1px 1px black; } }
+
+@media screen and (max-width: 375px) {
+  .mw-logo {
+    max-width: 120px; }
+  .hsContent p {
+    font-size: 12px;
+    text-shadow: 2px 1px black; }
+  .hsContent h2, .copy h2 {
+    font-size: 20px;
+    text-shadow: 1px 1px black; }
+  .M-lists li {
+    font-size: 12px;
+    text-shadow: 1px 1px black; } }
+
+@media screen and (max-width: 350px) {
+  .mw-logo {
+    max-width: 100px; }
+  .hsContent p {
+    font-size: 10px; }
+  .M-lists li {
+    font-size: 11px; }
+  .m-backtotop {
+    display: none; } }
+
+@media screen and (max-height: 375px) {
+  .mw-logo {
+    max-width: 120px; }
+  .hsContent p {
+    font-size: 10px;
+    text-shadow: 2px 1px black; }
+  .hsContent h2, .copy h2 {
+    font-size: 18px;
+    text-shadow: 1px 1px black; }
+  .M-lists li {
+    font-size: 10px;
+    text-shadow: 1px 1px black; } }
+
+span {
+  font-size: 10px;
+  font-size: 1rem;
+  line-height: 20px;
+  font-weight: 300;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  text-transform: none; }
+
+.m-backtotop {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: fixed;
+  bottom: -50px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: #222;
+  border-radius: 25px;
+  text-align: center;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  overflow: hidden;
+  color: #fff; }
+  .m-backtotop.active {
+    bottom: 30px;
+    right: 7rem;
+    opacity: 1; }
+  .m-backtotop > div {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+    .m-backtotop > div.arrow {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      opacity: 1; }
+    .m-backtotop > div.text {
+      font-size: 5px;
+      font-size: 0.5rem;
+      line-height: 10px;
+      text-transform: uppercase;
+      font-weight: 900;
+      font-family: "Open Sans", sans-serif;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateY(50%) translateX(-50%);
+      opacity: 0;
+      margin-top: 1px; }
+  .m-backtotop:hover {
+    transform: scale(1.1);
+    bottom: 20px;
+    cursor: pointer;
+    background: black;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1); }
+    .m-backtotop:hover > div.arrow {
+      transform: translateY(-150%) translateX(-50%);
+      opacity: 0; }
+    .m-backtotop:hover > div.text {
+      transform: translateY(-50%) translateX(-50%);
+      opacity: 1; }
+
+.navigation {
+  position: relative; }
+  .navigation_checkbox {
+    position: fixed;
+    top: 4.5rem;
+    right: 4.5rem;
+    display: none; }
+  .navigation_button {
+    width: 7rem;
+    height: 7rem;
+    background-color: #fff;
+    border-radius: 50%;
+    position: fixed;
+    top: 4.5rem;
+    right: 4.5rem;
+    z-index: 200;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    cursor: pointer; }
+    @media screen and (max-width: 900px) {
+      .navigation_button {
+        top: 3.5rem;
+        right: 2.5rem; } }
+    @media screen and (max-width: 600px) {
+      .navigation_button {
+        width: 4.5rem;
+        height: 4.5rem; } }
+  .navigation_background {
+    width: 6rem;
+    height: 6rem;
+    position: fixed;
+    top: 5rem;
+    right: 5rem;
+    background-image: linear-gradient(to right bottom, #7ed56f, #28b483);
+    border-radius: 50%;
+    z-index: 100;
+    transform: scale(0);
+    transition: transform .7s; }
+    @media screen and (max-width: 900px) {
+      .navigation_background {
+        top: 3rem;
+        right: 2rem; } }
+    @media screen and (max-width: 600px) {
+      .navigation_background {
+        width: 4rem;
+        height: 4rem;
+        top: 3rem;
+        right: 2rem; } }
+  .navigation_nav {
+    position: fixed;
+    height: 100vh;
+    width: 0%;
+    top: 0;
+    left: 0;
+    z-index: 150;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.33, 1, 0.68, 1); }
+  .navigation_list {
+    list-style: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%; }
+  .navigation_item {
+    margin: 1rem;
+    padding: 1rem; }
+  .navigation_link {
+    font-size: 3rem;
+    font-weight: 300;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+    background-size: 230%;
+    transition: all .4s;
+    display: inline-block; }
+    @media screen and (max-width: 900px) {
+      .navigation_link {
+        font-size: 2rem; } }
+    .navigation_link:hover {
+      background-position: 100%;
+      color: #55c57a;
+      transform: translateX(1rem); }
+  .navigation_checkbox:checked ~ .navigation_background {
+    transform: scale(60); }
+  .navigation_checkbox:checked ~ .navigation_nav {
+    opacity: 1;
+    visibility: visible;
+    width: 100%; }
+  .navigation_icon {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .navigation_icon, .navigation_icon::after, .navigation_icon::before {
+      width: 3rem;
+      height: 2px;
+      background-color: #333;
+      display: inline-block; }
+      @media screen and (max-width: 900px) {
+        .navigation_icon, .navigation_icon::after, .navigation_icon::before {
+          width: 2rem; } }
+      @media screen and (max-width: 600px) {
+        .navigation_icon, .navigation_icon::after, .navigation_icon::before {
+          height: 1px; } }
+    .navigation_icon::after, .navigation_icon::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all .2s; }
+    .navigation_icon::before {
+      top: -0.8rem; }
+    .navigation_icon::after {
+      top: 0.8rem; }
+  .navigation_button:hover .navigation_icon::before {
+    top: -1rem; }
+  .navigation_button:hover .navigation_icon::after {
+    top: 1rem; }
+  .navigation_checkbox:checked + .navigation_button .navigation_icon {
+    background-color: transparent; }
+  .navigation_checkbox:checked + .navigation_button .navigation_icon::before {
+    top: 0;
+    transform: rotate(-135deg); }
+  .navigation_checkbox:checked + .navigation_button .navigation_icon::after {
+    top: 0;
+    transform: rotate(135deg); }
+
+.M-lists {
+  line-height: 2.5;
+  font-size: 20px;
+  text-shadow: 3px 2px black;
+  max-width: 600px;
+  margin: 0 auto; }
+
+.M-lists li {
+  list-style-type: circle; }

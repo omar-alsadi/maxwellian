@@ -1,0 +1,78 @@
+span {
+    @include font-size(1, 2);
+
+    font-weight: 300;
+    font-family: $f-body;
+    font-style: italic;
+    text-transform: none;
+}
+
+.m-backtotop {
+    @include transition(all 0.3s ease-in-out);
+
+    position: fixed;
+    bottom: -50px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: #222;
+    border-radius: 25px;
+    text-align: center;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    overflow: hidden;
+    color: #fff;
+
+    &.active {
+        bottom: 30px;
+        right: 7rem;
+        opacity: 1;
+    }
+
+    & > div {
+        @include transition(all 0.3s ease-in-out);
+
+        &.arrow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%);
+            opacity: 1;
+        }
+
+        &.text {
+            @include font-size(0.5, 1);
+
+            text-transform: uppercase;
+            font-weight: 900;
+            font-family: $f-body;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateY(50%) translateX(-50%);
+            opacity: 0;
+            margin-top: 1px;
+        }
+    }
+
+    &:hover {
+        transform: scale(1.1);
+        bottom: 20px;
+        cursor: pointer;
+        background: darken(#222, 15%);
+        box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+
+        & > div {
+            &.arrow {
+                transform: translateY(-150%) translateX(-50%);
+                opacity: 0;
+            }
+
+            &.text {
+                transform: translateY(-50%) translateX(-50%);
+                opacity: 1;
+            }
+        }
+    }
+}

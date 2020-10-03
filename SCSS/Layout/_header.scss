@@ -1,0 +1,13 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mw-logo {
+    max-width: 250px;
+    position: absolute;
+    top: 5.5rem;
+    left: 4.5rem;
+    z-index: 100;
+}

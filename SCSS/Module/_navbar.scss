@@ -1,0 +1,192 @@
+.navigation {
+    position: relative;
+
+    &_checkbox {
+        position: fixed;
+        top: 4.5rem;
+        right: 4.5rem;
+        display: none;
+    }
+
+    &_button {
+        width: 7rem;
+        height: 7rem;
+        background-color: $white-color;
+        border-radius: 50%;
+        position: fixed;
+        top: 4.5rem;
+        right: 4.5rem;
+        z-index: 200;
+        box-shadow: 0 1rem 2rem rgba($black-blur, 0.2);
+        cursor: pointer;
+
+        @media screen and (max-width: 900px) {
+            top: 3.5rem;
+            right: 2.5rem;
+        }
+
+        @media screen and (max-width: 600px) {
+            width: 4.5rem;
+            height: 4.5rem;
+        }
+    }
+
+    &_background {
+        width: 6rem;
+        height: 6rem;
+        position: fixed;
+        top: 5rem;
+        right: 5rem;
+        background-image: linear-gradient(to right bottom, rgb(126, 213, 111), rgb(40, 180, 131));
+        border-radius: 50%;
+        z-index: 100;
+        transform: scale(0);
+        transition: transform .7s;
+
+        @media screen and (max-width: 900px) {
+            top: 3rem;
+            right: 2rem;
+        }
+
+        @media screen and (max-width: 600px) {
+            width: 4rem;
+            height: 4rem;
+            top: 3rem;
+            right: 2rem;
+        }
+    }
+
+    &_nav {
+        position: fixed;
+        height: 100vh;
+        width: 0%;
+        top: 0;
+        left: 0;
+        z-index: 150;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.8s cubic-bezier(0.33, 1, 0.68, 1);
+    }
+
+    &_list {
+        list-style: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+    }
+
+    &_item {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    &_link {
+        font-size: 3rem;
+        font-weight: 300;
+        text-decoration: none;
+        padding: 1rem 2rem;
+        color: $white-color;
+        text-transform: uppercase;
+        background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $white-color 50%);
+        background-size: 230%;
+        transition: all .4s;
+        display: inline-block;
+
+        @media screen and (max-width: 900px) {
+            font-size: 2rem;
+        }
+
+        &:hover {
+            background-position: 100%;
+            color: $color-primary;
+            transform: translateX(1rem);
+        }
+    }
+
+    &_checkbox:checked ~ &_background {
+        transform: scale(60);
+    }
+
+    &_checkbox:checked ~ &_nav {
+        opacity: 1;
+        visibility: visible;
+        width: 100%;
+    }
+
+    &_icon {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        &,
+        &::after,
+        &::before {
+            width: 3rem;
+            height: 2px;
+            background-color: #333;
+            display: inline-block;
+
+            @media screen and (max-width: 900px) {
+                width: 2rem;
+            }
+
+            @media screen and (max-width: 600px) {
+                height: 1px;
+            }
+        }
+
+        &::after,
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            transition: all .2s;
+        }
+
+        &::before {
+            top: -0.8rem;
+        }
+
+        &::after {
+            top: 0.8rem;
+        }
+    }
+
+    &_button:hover &_icon::before {
+        top: -1rem;
+    }
+
+    &_button:hover &_icon::after {
+        top: 1rem;
+    }
+
+    &_checkbox:checked + &_button &_icon {
+        background-color: transparent;
+    }
+
+    &_checkbox:checked + &_button &_icon::before {
+        top: 0;
+        transform: rotate(-135deg);
+    }
+
+    &_checkbox:checked + &_button &_icon::after {
+        top: 0;
+        transform: rotate(135deg);
+    }
+}
+
+.M-lists {
+    line-height: 2.5;
+    font-size: 20px;
+    text-shadow: 3px 2px black;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.M-lists li {
+    list-style-type: circle;
+}

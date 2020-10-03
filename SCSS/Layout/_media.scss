@@ -1,0 +1,106 @@
+@media screen and (max-width: 1200) {
+    .hsContent p {
+        font-size: 24px;
+    }
+
+    .hsContent h2, .copy h2 {
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 1000px), screen and (max-height: 750px) {
+    .hsContent p {
+        font-size: 20px;
+        text-shadow: 2px 1px black;
+    }
+
+    .hsContent h2, .copy h2 {
+        font-size: 48px;
+        text-shadow: 1px 1px black;
+    }
+}
+
+@media screen and (max-width: 680px), screen and (max-height: 600px) {
+    .mw-logo {
+        max-width: 150px;
+    }
+
+    .homeSlide {
+        height: 100vh;
+    }
+
+    .hsContent p {
+        font-size: 14px;
+        text-shadow: 2px 1px black;
+    }
+
+    .hsContent h2, .copy h2 {
+        font-size: 22px;
+        text-shadow: 1px 1px black;
+    }
+
+    .M-lists li {
+        font-size: 14px;
+        text-shadow: 1px 1px black;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .mw-logo {
+        max-width: 120px;
+    }
+
+    .hsContent p {
+        font-size: 12px;
+        text-shadow: 2px 1px black;
+    }
+
+    .hsContent h2, .copy h2 {
+        font-size: 20px;
+        text-shadow: 1px 1px black;
+    }
+
+    .M-lists li {
+        font-size: 12px;
+        text-shadow: 1px 1px black;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .mw-logo {
+        max-width: 100px;
+    }
+
+    .hsContent p {
+        font-size: 10px;
+    }
+
+    .M-lists li {
+        font-size: 11px;
+    }
+
+    .m-backtotop {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 375px) {
+    .mw-logo {
+        max-width: 120px;
+    }
+
+    .hsContent p {
+        font-size: 10px;
+        text-shadow: 2px 1px black;
+    }
+
+    .hsContent h2, .copy h2 {
+        font-size: 18px;
+        text-shadow: 1px 1px black;
+    }
+
+    .M-lists li {
+        font-size: 10px;
+        text-shadow: 1px 1px black;
+    }
+}
